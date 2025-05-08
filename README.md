@@ -22,7 +22,7 @@ Permite autentificare cu OTP, donații unice și recurente, gestionare cauze, ra
 git clone https://github.com/nicolae-zen/caritate-api.git
 cd caritate-api
 
-2. Instaleaza dependente
+2. Instaleaza dependente:
 composer install
 
 3. Copiaza fisierul .env.example

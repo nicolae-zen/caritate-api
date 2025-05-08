@@ -21,28 +21,40 @@ Permite autentificare cu OTP, donații unice și recurente, gestionare cauze, ra
 ```bash
 git clone https://github.com/nicolae-zen/caritate-api.git
 cd caritate-api
+```
 
 2. Instaleaza dependente:
+```bash
 composer install
+```
 
-3. Copiaza fisierul .env.example
+4. Copiaza fisierul .env.example
+```bash
 cp .env.example .env
+````
 
-4. Genereaza cheia aplicatiei și cheia JWT
+6. Genereaza cheia aplicatiei și cheia JWT
+```bash
 php artisan key:generate
 php artisan jwt:secret
+````
 
-
-5. Configureaza conexiunea la baza de date in .env
+7. Configureaza conexiunea la baza de date in .env
+```bash
 DB_DATABASE=caritate_db
 DB_USERNAME=root
 DB_PASSWORD=
+````
 
-6. Ruleaza migratiile
+8. Ruleaza migratiile
+```bash
 php artisan migrate
+````
 
 ## Pornire server local
+```bash
 php artisan serve
+````
 
 ## Documentatie API (Scribe)
 http://127.0.0.1:8000/docs
